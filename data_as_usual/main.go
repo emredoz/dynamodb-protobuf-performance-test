@@ -38,6 +38,7 @@ func saveData() {
 		SK:       1,
 		Messages: model.CreateMessages(),
 	}
+	
 	marshalStartTime := time.Now()
 	putItem, _ := dynamodbattribute.MarshalMap(dynamoDataItem)
 	marshalFinishTime := time.Now()
