@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package model;
+
+option go_package = "./model";
+
+message messageData {
+  string to = 1;
+  string from = 2;
+  string message = 3;
+}
+
+message messages{
+  repeated messageData messageList = 1;
+}
